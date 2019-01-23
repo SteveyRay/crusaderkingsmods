@@ -1,0 +1,32 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ask_dragons_for_thuum"
+		texturefile = "gfx//interface//atmorathuum.tga"
+		noOfFrames = 1
+ 		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_trait_p_dragon_alduin"
+		texturefile = "gfx/traits/p_dragon_alduin.tga"
+		noOfFrames = 1
+ 		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_trait_p_dragon_kahvozein"
+		texturefile = "gfx/traits/p_dragon_kahvozein.tga"
+		noOfFrames = 1
+ 		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_trait_p_dragon_durnehviir"
+		texturefile = "gfx/traits/p_dragon_durnehviir.tga"
+		noOfFrames = 1
+ 		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_trait_p_dragon_paarthurnax"
+		texturefile = "gfx/traits/p_dragon_paarthurnax.tga"
+		noOfFrames = 1
+ 		norefcount = yes
+	}
+}

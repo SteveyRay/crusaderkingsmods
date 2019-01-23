@@ -1,0 +1,27 @@
+p_dragon_alduin = {
+	religious = yes
+	customizer = no
+	material = 1
+	monthly_character_prestige = 0.1
+}
+p_dragon_kahvozein = {
+	stewardship = 1 
+	monthly_character_prestige = 0.1
+	religious = yes
+	customizer = no
+}
+p_dragon_durnehviir = {
+	learning = 1
+	religious = yes
+	customizer = no
+	monthly_character_piety = 0.1
+}
+p_dragon_paarthurnax = {
+	diplomacy = 1
+	monthly_character_piety = 0.1
+	religious = yes
+	customizer = no
+}
+#dragoncult traits
+#moutrary trait ranks
+#overlord ranks

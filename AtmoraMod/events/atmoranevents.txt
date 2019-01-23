@@ -1,0 +1,132 @@
+character_event = {
+	id = 417402
+	picture = GFX_evt_mountains_0
+	desc = dragoncult_thuum1
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = dragonsaccept
+		if = {
+			limit = {
+				NOR = {
+					trait = thuum_1
+					trait = thuum_2
+					trait = thuum_3
+				}
+			}
+			add_trait = thuum_1
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = thuum_1
+			}
+			remove_trait = thuum_1
+			add_trait = thuum_2
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = thuum_2
+			}
+			remove_trait = thuum_2
+			add_trait = thuum_3
+			break = yes
+		}
+	}
+}
+namespace = dcpne
+# dragon cult patron natrive
+character_event = {
+	id = 417403
+	picture = GFX_evt_mountains_0 
+	border = GFX_event_normal_frame_diplomacy
+	desc = dragoncult_patron
+	is_triggered_only = yes
+	option = {
+		name = worship_alduin
+		custom_toolip = {
+			text = patrondovah
+			hidden_tooltip = { narrative_event = { id = dcpne.1 } }
+		} 
+	}
+	option = {
+		name = worship_kahvozein
+		custom_toolip = {
+			text = patrondovah 
+			hidden_tooltip = { narrative_event = { id = dcpne.2 } }
+		}
+	}
+	option = {
+		name = worship_durnehviir
+		trigger = {
+			trait = necromancer
+		}
+		custom_toolip = {
+			text = patrondovah
+			hidden_tooltip = { narrative_event = { id = dcpne.3 } }
+		}
+	}
+	option = {
+		name = worship_paarthurnax
+		custom_tooltip = {
+			text = patrondovah
+			hidden_tooltip = { narrative_event = { id = dcpne.4 } }
+		}
+	}
+}
+narrative_event = {
+	id = dcpne.1
+	title = evtname_dcpne_1
+	desc = evtdesc_dcpne_1
+	picture = GFX_evt_mountains_0 
+	border = GFX_event_narrative_frame_diplomacy
+	is_triggered_only = yes
+
+	option = {
+		name = evtopta_dcpne_1
+		add_trait = p_dragon_alduin
+	}
+}
+narrative_event = {
+	id = dcpne.2
+	title = evtname_dcpne_2
+	desc = evtdesc_dcpne_2
+	picture = GFX_evt_mountains_0 
+	border = GFX_event_narrative_frame_diplomacy
+	is_triggered_only = yes
+
+	option = {
+		name = evtopta_dcpne_2
+		add_trait = p_dragon_kahvozein
+	}
+}
+narrative_event = {
+	id = dcpne.3
+	title = evtname_dcpne_3
+	desc = evtdesc_dcpne_3
+	picture = GFX_evt_mountains_0 
+	border = GFX_event_narrative_frame_diplomacy
+	is_triggered_only = yes
+
+	option = {
+		name = evtopta_dcpne_3
+		add_trait = p_dragon_durnehviir
+	}
+}
+narrative_event = {
+	id = dcpne.4
+	title = evtname_dcpne_4
+	desc = evtdesc_dcpne_4
+	picture = GFX_evt_mountains_0 
+	border = GFX_event_narrative_frame_diplomacy
+	is_triggered_only = yes
+
+	option = {
+		name = evtopta_dcpne_4
+		add_trait = p_dragon_paarthurnax
+	}
+}
+

@@ -1,0 +1,96 @@
+tribal = {
+	yh_personal_shrine_0yh = {
+		desc = yh_personal_shrine_0yh_desc
+		potential = {
+			FROM = {
+				capital_holding = {
+					title = FROMFROM
+				}
+			}
+		}
+		trigger = { TECH_CONSTRUCTION = 0 }
+		prestige_cost = 100
+		build_time = 50
+		add_number_to_name = no
+	}
+	yh_dragon_shrine_1yh = {
+		desc = yh_dragon_shrine_1yh_desc
+		potential = {
+			FROM = {
+				OR = {
+					culture = nord
+					culture = atmoran
+				}
+				religion = dragon_cult
+			}
+		}
+		trigger = { TECH_CONSTRUCTION = 0 }
+		build_time = 1
+		prestige_cost = 100
+		upgrades_from = yh_personal_shrine_0yh
+	}
+	yh_dragon_shrine_a2yh = {
+		desc = yh_dragon_shrine_a2yh_desc
+		potential = {
+			FROM = {
+				OR = {
+					culture = nord
+					culture = atmoran
+				}
+				religion = dragon_cult
+			}
+		}
+		trigger = { TECH_CONSTRUCTION = 0 }
+		build_time = 1
+		prestige_cost = 100
+		upgrades_from = yh_dragon_shrine_1yh
+	}
+	yh_dragon_shrine_b2yh = {
+		desc = yh_dragon_shrine_b2yh_desc
+		potential = {
+			FROM = {
+				OR = {
+					culture = nord
+					culture = atmoran
+				}
+				religion = dragon_cult
+			}
+		}
+		trigger = { TECH_CONSTRUCTION = 0 }
+		build_time = 1
+		prestige_cost = 100
+		upgrades_from = yh_dragon_shrine_1yh
+	}
+	yh_dragon_shrine_c2yh = {
+		desc = yh_dragon_shrine_c2yh_desc
+		potential = {
+			FROM = {
+				OR = {
+					culture = nord
+					culture = atmoran
+				}
+				religion = dragon_cult
+			}
+		}
+		trigger = { TECH_CONSTRUCTION = 0 }
+		build_time = 1
+		prestige_cost = 100
+		upgrades_from = yh_dragon_shrine_1yh
+	}
+	yh_dragon_shrine_d2yh = {
+		desc = yh_dragon_shrine_d2yh_desc
+		potential = {
+			FROM = {
+				OR = {
+					culture = nord
+					culture = atmoran
+				}
+				religion = dragon_cult
+			}
+		}
+		trigger = { TECH_CONSTRUCTION = 0 }
+		build_time = 1
+		prestige_cost = 100
+		upgrades_from = yh_dragon_shrine_1yh
+	}
+}

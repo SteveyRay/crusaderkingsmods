@@ -1,0 +1,58 @@
+decisions = {
+	ask_dragons_for_thuum = {
+		is_high_prio = yes
+		potential = {
+			religion = dragon_cult
+			has_submenu_open = no
+			piety = 500
+			NOT = {
+				trait = thuum_3
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { trait = undead }
+					piety = 500
+				}
+				AND = {
+					trait = undead
+					piety = 1500
+				}
+			}
+			prisoner = no
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { trait = undead }
+				}
+				piety = -500
+			}
+			if = {
+				limit = {
+					trait = undead
+				}
+				piety = -1500
+			}
+			character_event = { id = 417402 }
+		}
+	}
+	pick_dovah_patron = {
+		is_high_prio = yes
+		potential = {
+			religion = dragon_cult
+			has_submenu_open = no
+			piety = 10
+			NOT = {
+				trait = p_dragon_paarthurnax
+				trait = p_dragon_durnehviir
+				trait = p_dragon_kahvozein
+				trait = p_dragon_alduin
+			}
+		}
+		effect = {
+			character_event = { id = 417403 }
+		}
+	}
+}

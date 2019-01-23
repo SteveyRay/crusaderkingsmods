@@ -1,0 +1,56 @@
+dragoncult_thuum1;Perhaps it is due to my natural skills, or because of my devotion to the glorious and mighty Dovah,but I have gained a greater understanding of the Thu'um!;;;;;;;;;;;;;x
+dragonsaccept;Hin Zul Mulaag!;;;;;;;;;;;;;x
+ask_dragons_for_thuum;Ask Dragons for wisdom;;;;;;;;;;;;;x
+ask_dragons_for_thuum_desc;You hold a great sacrifice to gain the patronage of a Dovah. The Dovah are masters of the voice, prehaps they may bestow the gift of conversation onto you.;;;;;;;;;;;;;x
+yh_dragon_shrine_1yh;Personal Shrine to the Dragons;;;;;;;;;;;;;x
+yh_dragon_shrine_1yh_desc;Your personal shrine to the All mighty Dragons.;;;;;;;;;;;;;x
+yh_personal_shrine_0yh;Personal Sanctuary;;;;;;;;;;;;;x
+yh_personal_shrine_0yh_desc;Begin work on making a Personal shrine for your very own use to your personal (public) god!;;;;;;;;;;;;;x
+yh_dragon_shrine_a2yh;Alduin Shrine;;;;;;;;;;;;;x
+yh_dragon_shrine_a2yh_desc;You dedicate your shrine to Alduin, overlord of overlords!;;;;;;;;;;;;;x
+yh_dragon_shrine_b2yh;Shrine to Kahvozein;;;;;;;;;;;;;x
+yh_dragon_shrine_b2yh_desc;You dedicate your shrine to Kahvozein.;;;;;;;;;;;;;x
+yh_dragon_shrine_c2yh;Shrine to Durnehviir;;;;;;;;;;;;;x
+yh_dragon_shrine_c2yh_desc;your necromatic activity and research has brought lead to your awareness of an Ancient power in the Soul Carin, which you have begun to worship and commune with.;;;;;;;;;;;;;x
+yh_dragon_shrine_d2yh;Shrine to Paarthurnax;;;;;;;;;;;;;x
+yh_dragon_shrine_d2yh_desc;You dedicate your shrine to Paarthurnax, the Old One, second in commmand of Alduin himself, betrayer of Dovah, Patron of Man;;;;;;;;;;;;;x
+pick_dovah_patron;Pick a Dragon Patron;;;;;;;;;;;;;x
+pick_dovah_patron_desc;You commune with the dragons to select a personal patron;;;;;;;;;;;;;x
+p_dragon_alduin;Alduin Worshipper;;;;;;;;;;;;;x
+p_dragon_alduin_desc;You have declared Alduin as your patron Dovah;;;;;;;;;;;;;x
+p_dragon_kahvozein;Kahvozein Worshipper;;;;;;;;;;;;;x
+p_dragon_kahvozein_desc;You have declared Kahvozein as your Patron Dovah;;;;;;;;;;;;;x
+p_dragon_durnehviir;Durnehviir Worshipper;;;;;;;;;;;;;x
+p_dragon_durnehviir_desc;Through your necromatic learnings, you have come to worship Durnehviir as your patron Dovah;;;;;;;;;;;;;x
+p_dragon_paarthurnax;Paarthurnax Worshipper;;;;;;;;;;;;;x
+p_dragon_paarthurnax_desc;You have declared the Old One as your Patron Dovah;;;;;;;;;;;;;x
+patrondovah;You select a Dovah for you to personally worship and study.;;;;;;;;;;;;;x
+worship_alduin;You honor Alduin, First Born of Akatosh;;;;;;;;;;;;;x
+worship_kahvozein;You honor Kahvozein, the Taskmaster;;;;;;;;;;;;;x
+worship_durnehviir;You Honor Durnehviir, the Cursed One;;;;;;;;;;;;;x
+worship_paarthurnax;You Honor Paarthurnax, the Old One;;;;;;;;;;;;;x
+evtname_dcpne_1;The True will of the Dovah;;;;;;;;;;;;;x
+evtdesc_dcpne_1;You embrace the toolage of Alduin and his supreme will;;;;;;;;;;;;;x
+evtopta_dcpne_1;Servitude for Alduin;;;;;;;;;;;;;x
+evtname_dcpne_2;Service for Kahvozein;;;;;;;;;;;;;x
+evtdesc_dcpne_2;You dedicate yourself to the works and vigor of Kahvozein;;;;;;;;;;;;;x
+evtopta_dcpne_2;Glory to Kahvozein;;;;;;;;;;;;;x
+evtname_dcpne_3;Woe to Durnehviir;;;;;;;;;;;;;x
+evtdesc_dcpne_3;You deleve into the mystery surronding the lost one, Durnehviir.;;;;;;;;;;;;;x
+evtopta_dcpne_3;Glory to Durnehviir;;;;;;;;;;;;;x
+evtname_dcpne_4;Honor Paarthurnax;;;;;;;;;;;;;x
+evtdesc_dcpne_4;You dedicate yourself to the teachings and legacy of the Old One;;;;;;;;;;;;;x
+evtopta_dcpne_4;Praise Paarthurnax!;;;;;;;;;;;;;x
+dragoncult_patron;Pick a draong as a parton god;;;;;;;;;;;;;x
+dragon_cult_atmora;The Great Dragon Cult;;;;;;;;;;;;;x
+dragon_cult_atmora_desc;The dragoncult is the burgeoning aspect of the Atmoran animalist religion centered around the totem of the dragon that has outgrown it's parent religion.;;;;;;;;;;;;;x
+dragon_cult_atmora_leader_desc;Konahrik;;;;;;;;;;;;;x
+dragon_cult_atmora_rank_1_male;Dragon Cult Neophyte;;;;;;;;;;;;;x
+dragon_cult_atmora_rank_2_male;Dragon Cult Disciple;;;;;;;;;;;;;x
+dragon_cult_atmora_rank_3_male;Dragon Cult Supplicant;;;;;;;;;;;;;x
+dragon_cult_atmora_rank_4_male;Dragon Cult Priest;;;;;;;;;;;;;x
+dragon_cult_atmora_rank_1_female;Dragon Cult Neophyte;;;;;;;;;;;;;x
+dragon_cult_atmora_rank_2_female;Dragon Cult Disciple;;;;;;;;;;;;;x
+dragon_cult_atmora_rank_3_female;Dragon Cult Supplicant;;;;;;;;;;;;;x
+dragon_cult_atmora_rank_4_female;Dragon Cult Priest;;;;;;;;;;;;;x
+dragon_cult_atmora_currency_name;Scales;;;;;;;;;;;;;x

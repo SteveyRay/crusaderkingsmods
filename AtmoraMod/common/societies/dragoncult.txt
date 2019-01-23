@@ -1,0 +1,309 @@
+dragon_cult_atmora = {
+	primary_attribute = learning
+	society_ranks_gfx = imperial_geographical_society_ranks
+	opinion_to_other_members = +10
+	opinion_per_rank_above = +5
+	is_religious = yes
+	sound = assassins_interface
+	active = {
+		always = yes
+	}
+	indestructible = yes
+	can_join_society = {
+		is_in_society = no
+		NOT = { has_character_modifier = ek_society_pension }
+		hidden_trigger = {
+			NAND = {
+				is_society_rank_full = {
+					society = dragon_cult_atmora
+					rank = 1
+				}
+				liege = {
+					is_playable = no
+				}
+			}
+			NOR = {
+				mercenary = yes
+				holy_order = yes
+			}
+		}
+		age = 16
+		controls_religion = no
+		religion_group = atmoran_pantheon
+		learning = 10
+	}
+	show_society = {
+		society_memeber_of = dragon_cult_atmora
+		religion_group = atmoran_pantheon
+	}
+	potential = {
+		religion_group = atmoran_pantheon
+	}
+	society_rank = {
+		level = 1
+		limit = 36
+		startup_limit = 10
+		modifier = {
+			monthly_character_prestige = 0.01
+		}
+		decisions = {
+			study_specialization #Choose your specialization
+			cancel_specialization #Don't choose your specialization
+		}
+	}
+	society_rank = {
+		level = 2
+		limit = 24
+		startup_limit = 8
+		modifier = {
+			monthly_character_prestige = 0.025
+		}
+		decisions = {
+		}
+	}
+	society_rank = {
+		level = 3
+		limit = 12
+		startup_limit = 4
+		modifier = {
+			monthly_character_prestige = 0.05
+		}
+		decisions = {
+		}
+	}
+	society_rank = {
+		level = 4
+		limit = 6
+		startup_limit = 2
+		modifier = {
+			monthly_character_prestige = 0.1
+		}
+		decisions = {
+		}
+	}
+	society_rank = {
+		level = 5
+		limit = 1
+		startup_limit = 1
+		modifier = {
+			monthly_character_prestige = 0.15
+			build_cost_castle_modifier = -0.1
+			build_cost_tribal_modifier = -0.1
+		}
+		decisions = {
+		}
+	}
+	monthly_currency_gain = {
+		name = currency_name_dragon_cult_atmora
+		per_attribute = {
+			name = learning
+			value = 0.5
+		}
+		has_trait = {
+			value = 1.5
+			trait = diligent
+		}
+		has_trait = {
+			value = 1.0
+			trait = brave
+		}
+		has_trait = {
+			value = 1
+			trait = poet
+		}
+		has_trait = {
+			value = 1.5
+			trait = just
+		}
+		has_trait = {
+			trait = honest
+			value = 1
+		}
+		has_trait = {
+			trait = charitable
+			value = 1
+		}
+		has_trait = {
+			trait = erudite
+			value = 0.5
+		}
+		#Lifestyles
+		has_trait = {
+			value = 0.5
+			trait = strategist
+		}
+		has_trait = {
+			value = 1.25
+			trait = duelist
+		}
+		has_trait = {
+			value = 0.25
+			trait = hunter
+		}
+		has_trait = {
+			value = 1.25
+			trait = adventurer
+		}
+		has_trait = {
+			value = 0.75
+			trait = gladiator
+		}
+		has_trait = {
+			value = 0.75
+			trait = scholar
+		}
+		#Congenital Traits
+		has_trait = {
+			value = 0.5
+			trait = strong
+		}
+		has_trait = {
+			value = 0.5
+			trait = fortitude
+		}
+		has_trait = {
+			value = 0.5
+			trait = robust
+		}
+		has_trait = {
+			value = 0.5
+			trait = agile
+		}
+		has_trait = {
+			value = 0.25
+			trait = perceptive
+		}
+		has_trait = {
+			value = 0.25
+			trait = shrewd
+		}
+		has_trait = {
+			value = 0.25
+			trait = quick
+		}
+		has_trait = {
+			value = 0.25
+			trait = genius
+		}
+		has_trait = {
+			value = 0.25
+			trait = lucky
+		}
+		#Educations
+		has_trait = {
+			value = 1
+			trait = warrior_3
+		}
+		has_trait = {
+			value = 1.5
+			trait = warrior_4
+		}
+		has_trait = {
+			value = 2
+			trait = warrior_5
+		}
+		has_trait = {
+			value = 1
+			trait = mage_4
+		}
+		has_trait = {
+			value = 1.5
+			trait = mage_5
+		}
+		has_trait = {
+			value = 1
+			trait = agent_4
+		}
+		has_trait = {
+			value = 1.5
+			trait = agent_5
+		}
+		#Patrion Deities
+		has_trait = {
+			value = 0.5
+			trait = p_dragon_alduin
+		}
+		has_trait = {
+			value = 0.01
+			trait = p_dragon_paarthurnax
+		}
+		has_trait = {
+			value = 0.01
+			trait = p_dragon_durnehviir
+		}
+		has_trait = {
+			value = 0.5
+			trait = p_dragon_kahvozein
+
+		}
+		#Sword-Singer/Ansei ranks
+		#has_trait = {
+		#	value = 0.5
+		#	trait = swordsinger_1
+		#}
+		#has_trait = {
+		#	value = 0.75
+		#	trait = swordsinger_2
+		#}
+		#has_trait = {
+		#	value = 1
+		#	trait = swordsinger_3
+		#}
+		has_trait = {
+			value = 1.5
+			trait = thuum_1
+		}
+		has_trait = {
+			value = 2
+			trait = thuum_2
+		}
+		has_trait = {
+			value = 2.5
+			trait = thuum_3
+		}
+		#Ranks
+		society_rank = {
+			rank = 2
+			value = 0.5
+		}
+		society_rank = {
+			rank = 3
+			value = 1.0
+		}
+		society_rank = {
+			rank = 4
+			value = 3
+		}
+	}
+
+	member_score_per_attribute = 2
+	member_score_per_rank = 100
+	member_score = {
+		value = 50
+		modifier = { factor = 2.0 trait = diligent }
+		modifier = { factor = 2.5 trait = just }
+		modifier = { factor = 2.0 trait = brave }
+		modifier = { factor = 1.5 trait = erudite }
+		modifier = { factor = 1.5 trait = poet }
+		modifier = { factor = 1.5 trait = patient }
+		modifier = { factor = 1.5 trait = temperate }
+		modifier = { factor = 2.0 trait = strategist }
+		modifier = { factor = 1.5 trait = adventurer }
+		modifier = { factor = 1.5 trait = duelist }
+		modifier = { factor = 1.25 trait = hunter }
+		modifier = { factor = 1.75 trait = gladiator }
+		modifier = { factor = 1.5 trait = scholar }
+	}
+	startup_populate = {
+		trigger = {
+			ai = yes
+			controls_religion = no
+			age = 16
+			is_in_society = no
+			is_dumb_trigger = no
+			is_inaccessible_trigger = no
+			learning = 5
+			religion_group = atmoran_pantheon
+		}
+	}
+}	

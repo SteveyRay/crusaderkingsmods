@@ -1,0 +1,250 @@
+ # Triggers are in Province scope. The From Scope contains the settlement holder (character)
+ # start trigger is in title scope.
+
+tribal = { 
+	at_shrine_0at = {
+		desc = at_shrine_0at_desc
+		potential = {
+			AND = {
+				culture = ayleid
+				NOT = {
+					religion = daedra_meridia
+				}
+			}	
+		}
+		trigger = { TECH_MAGICAL = 0 }
+		prestige_cost = 200
+		build_time = 100
+		lesser_daedra = 15
+		ai_creation_factor = 95
+		
+		extra_tech_building_start = 0.5
+		add_number_to_name = no
+	}
+	at_shrine_1at = {
+		desc = at_shrine_1at_desc
+		potential = {
+			AND = {
+				culture = ayleid
+				NOT = {
+					religion = daedra_meridia
+				}
+			}	
+		}
+		upgrades_from = at_shrine_0at
+		trigger = { TECH_MAGICAL = 0 }
+		prestige_cost = 250
+		build_time = 200
+		lesser_daedra = 10
+		ai_creation_factor = 95
+		extra_tech_building_start = 1.5
+		add_number_to_name = no
+	}
+	at_shrine_2at = { 
+		desc = at_shrine_2at_desc 
+		potential = {
+			AND = {
+				culture = ayleid
+				NOT = {
+					religion = daedra_meridia
+				}
+			}	
+		}
+		upgrades_from = at_shrine_1at
+		trigger = { TECH_MAGICAL = 1 }	
+		prestige_cost = 300
+		build_time = 250
+		lesser_daedra = 15
+		ai_creation_factor = 95
+		extra_tech_building_start = 2
+		add_number_to_name = no
+		tax_income = -0.2
+		levy_reinforce_rate = 0.0155
+	} 
+	at_shrine_3at = { 
+		desc = at_shrine_3at_desc
+		potential = {
+			AND = {
+				culture = ayleid
+				NOT = {
+					religion = daedra_meridia
+				}
+			}	
+		}
+		upgrades_from = at_shrine_2at
+		trigger = { TECH_MAGICAL = 1 }
+		prestige_cost = 1
+		build_time = 1  
+		lesser_daedra = 15
+		ai_creation_factor = 95
+		extra_tech_building_start = 2.5
+		add_number_to_name = no
+		levy_reinforce_rate = 0.0055
+		tax_income = -0.3
+	}
+	at_shrine_4at = {
+		desc = at_shrine_4at_desc
+		potential = {
+			AND = {
+				culture = ayleid
+				NOT = {
+					religion = daedra_meridia
+				}
+			}
+		}
+		upgrades_from = at_shrine_3at
+		trigger = { TECH_MAGICAL = 1 }
+		prestige_cost = 200
+		build_time = 365
+		lesser_daedra = -55
+		dremora_troop = 40
+		levy_reinforcement_rate = .0055
+		prerequisites = { atm_shrine_2atm }
+	}
+
+	atw_twyll_0atw = {
+		desc = atw_twyll_0atw_desc
+		potential = {
+			culture = ayleid
+		}
+		trigger = { TECH_MAGICAL = 0 }
+		prestige_cost = 200 
+		build_time = 100
+		tax_income = -0.2
+		ai_creation_factor = 09
+		extra_tech_building_start = 1
+		liege_prestige = 0.05
+	}
+
+	atw_twyll_1atw = {
+		desc = atw_twyll_1atw_desc
+		potential = {
+			culture = ayleid
+		}
+		upgrades_from = atw_twyll_0atw
+		trigger = { TECH_MAGICAL = 0 }
+		prestige_cost = 200
+		build_time = 100
+		tax_income = -0.1
+		ai_creation_factor = 99
+		extra_tech_building_start = 1.5
+		add_number_to_name = no
+		liege_prestige = 0.05
+		land_morale = .025
+	}
+
+	atw_twyll_2atw = {
+		desc = atw_twyll_2atw_desc
+		potential = {
+			culture = ayleid
+		}
+		upgrades_from = atw_twyll_1atw
+		trigger = { TECH_MAGICAL = 0 }
+		prestige_cost = 1
+		build_time = 1
+		tax_income = -0.3
+		ai_creation_factor = 99
+		extra_tech_building_start = 2
+		add_number_to_name = no
+		land_morale = .005
+		local_tax_modifier = .009
+
+		
+	}
+
+	atw_twyll_3atw = {
+		desc = atw_twyll_3atw_desc
+		potential = {
+			culture = ayleid
+		}
+		trigger = { TECH_MAGICAL = 0 }
+		upgrades_from = atw_twyll_2atw
+		prestige_cost = 365
+		build_time = 300 
+		tax_income = -0.3
+		ai_creation_factor = 99
+		extra_tech_building_start = 2.0
+		add_number_to_name = no
+		land_morale = .005
+		local_tax_modifier = .011
+		
+	}
+
+	atm_shrine_0atm = {
+		desc = atm_shrine_0atm_desc
+		potential = {
+			FROM = {
+				culture = ayleid
+				religion = daedra_meridia
+			}
+		}
+		trigger = { TECH_MAGICAL = 0}
+		prestige_cost = 300
+		build_time = 365
+		auroran = 15
+		add_number_to_name = no
+
+		ai_creation_factor = 95
+		
+		extra_tech_building_start = 0.5
+		add_number_to_name = no
+	}
+
+	atm_shrine_1atm = {
+		desc = atm_shrine_1atm_desc
+		potential = {
+			FROM = {
+				culture = ayleid
+				religion = daedra_meridia
+			}
+		}
+		trigger = { TECH_MAGICAL = 0 }
+		prestige_cost = 300
+		build_time = 365
+		auroran = 5
+		ai_creation_factor = 90
+		extra_tech_building_start = 90
+		upgrades_from = atm_shrine_0atm
+		add_number_to_name = no
+
+	}
+	atm_shrine_2atm = {
+		desc = atm_shrine_2atm_desc
+		potential = {
+			FROM = {
+				culture = ayleid
+				religion = daedra_meridia
+			}
+		}
+		prestige_cost = 300
+		build_time = 365
+		auroran = 8
+		ai_creation_factor = 90
+		extra_tech_building_start = 1.5
+		upgrades_from = atm_shrine_1atm
+		add_number_to_name = no
+	}
+	at_hamevel_0at = {
+		desc = at_hamevel_0at_desc
+		potential = {
+			FROM = {
+				culture = ayleid
+				religion = daedra_meridia
+				capital_holding = {
+					title = FROMFROM
+				}
+			}
+		}
+		prerequisites = { atm_shrine_2atm }
+		trigger = { TECH_MAGICAL = 0 }
+		prestige_cost = 400
+		build_time = 365
+		ai_creation_factor = 87
+		extra_tech_building_start = 100
+		add_number_to_name = no
+		auroran = 50
+		light_infantry = -70
+		prerequisites = { atw_twyll_3atw }
+	}
+}
+	

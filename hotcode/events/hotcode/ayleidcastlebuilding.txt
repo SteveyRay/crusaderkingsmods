@@ -1,0 +1,146 @@
+#ayleid castle
+#prefix = ac, suffix = number+ac, root word is whatever
+castle = {
+	ac_twyll = {  #branch upgarde for a lot of things, starts expensive and useless
+
+	}
+	ac_welkyndstone_turrets_1ac = {  #fort level
+		desc = ac_welkyndstone_turrets_1ac_desc
+		potential = {
+			culture = ayleid 
+		}
+		trigger = { TECH_MAGICAL = 0 }
+		gold_cost = 400
+		build_time = 450
+		ai_creation_factor = 60
+		extra_tech_building_start = 1.5
+		add_number_to_name = no
+		prerequisites = {}
+	}
+	ac_welkyndstone_turrets_2ac = {
+		desc = ac_welkyndstone_turrets_2ac_desc
+		potential = {
+			culture = ayleid
+		}
+		trigger { TECH_MAGICAL = 3 }
+		gold_cost = 500
+		build_time = 600
+		ai_creation_factor = 65
+		extra_tech_building_start = 2
+		upgrades_from = { ac_welkyndstone_turrets_1ac }
+	}
+	ac_welkyndstone_turrets_3ac = {
+		desc = ac_welkyndstone_turrets_3ac_desc
+		potential = {
+			culture = ayleid
+		}
+		trigger = { TECH_MAGICAL = 5 }
+		gold_cost = 800
+		build_time = 700
+		ai_creation_factor = 78
+		extra_tech_building_start = 5
+		upgrades_from = { ac_welkyndstone_turrets_2ac }
+	}
+	ac_aethrial_forge_1ac = { #upgrades heavy armor
+		desc = ac_aethrial_forge_1ac_desc
+		potential = {
+			culture = ayleid
+		}
+		trigger = { TECH_MAGICAL = 2 }
+		gold_cost = 500
+		build_time = 180
+		ai_creation_factor = 65
+		extra_tech_building_start = 4
+		add_number_to_name = no
+	}
+	ac_aethrial_forge_2ac = {
+		desc = ac_aethrial_forge_2ac_desc
+		potential = {
+			culture = ayleid
+		}
+		trigger = { TECH_MAGICAL = 4 }
+		#prerequisties twyll rank 3 etc
+	}
+	# Ayleids can either use their knowledge to build gate to other places on mundus or enpower their conjurers to summon daedra
+	ac_planar_conjunction_site_0ac = { #upgrade path to either increase reinforcement speed or replace light infantry with daedra
+		desc = ac_planar_conjunction_site_0ac
+		potential = {
+			culture = ayleid
+		}
+		trigger = { TECH_MAGICAL = 1 }
+		gold_cost = 100
+		buildings = 30
+		ai_creation_factor = 40
+		extra_tech_building_start = 1
+		add_number_to_name = no
+	}
+	ac_planar_conjunction_site_a1ac = {
+		desc = ac_planar_conjunction_site_a1ac_desc
+		potential = {
+			culture = ayleid
+		}
+		trigger = { TECH_MAGICAL = 2 }
+		gold_cost = 200
+		build_time = 90
+		ai_creation_factor = 45
+		prerequisites = ac_planar_conjunction_site_0ac
+
+	} 
+	#b is daedra
+	ac_planar_conjunction_site_b1ac = {
+		desc = ac_planar_conjunction_site_b1ac_desc
+		potential = {
+			culture = ayleid
+		}
+		trigger = { TECH_MAGICAL = 2 }
+		gold_cost = 250
+		build_time = 100
+		ai_creation_factor = 45
+		prerequisites = ac_planar_conjunction_site_0ac
+	}
+	ac_planar_conjunction_site_a2ac = {
+		desc = ac_planar_conjunction_site_a2ac_desc
+		potential = {
+			culture = ayleid
+		}
+		trigger = { TECH_MAGICAL = 3 }
+		gold_cost = 300
+		build_time = 150
+		ai_creation_factor = 50
+		upgrades_from = ac_planar_conjunction_site_a1ac
+	}
+	ac_planar_conjunction_site_b2ac = {
+		desc = ac_planar_conjunction_site_b2ac_desc
+		potential = {
+			culture = ayleid
+		}
+		trigger = { TECH_MAGICAL = 3 }
+		gold_cost = 340
+		build_time = 175
+		ai_creation_factor = 50
+		upgrades_from = { ac_planar_conjunction_site_b1ac}
+	}
+	#capital only buildings
+
+	ac_nexusgate = {
+
+	}
+	#only the most skilled artisians are allowed to work the better quality matterials.
+	ac_metoric_artisians = {
+
+	}
+	#daedric_shrines- mutally exlusive with gate and artisan
+	daedric_shrines = { #build foundation then one for your patron?
+
+	}
+}
+
+
+
+
+#idea for decision- build a bunch of great welknyd stones and place them as focus points for several wells,
+#then use them to conduct a ritual that has a high chance of destroying shit. Lower chance based on learning and traits- ideas is to allow
+#cool shit for incompetent characters that have high tech.
+
+#another idea, add ambition to explore ancestral runs- for ayleids allows for chance to develop welkynd researcher- learning gives chance to fire events to upgrade on successive ruin visits.
+#bloodline ideas- capital scope- 

@@ -1,0 +1,164 @@
+#randombloodline
+character_event = {
+	id 
+	title
+	desc
+	sound
+	is_triggered_only = yes
+	trigger = {
+		learning > 30
+		trait = thuum_3
+		not = { trait = legendary_tounge }
+		has_ambition = obj_perfect_knowledge
+	}
+	option = { 
+		name = 
+		if = {
+			limit = {
+
+			}
+		}
+	}
+}
+#mastery words with progress in the thuum
+character_event = {
+	id = wordmastery_event.0
+	picture = GFX_evt_mountains_0
+	desc = word_mastery1
+	is_triggered_only = yes
+	option = {
+		name = evtoptaforce
+		if = {
+			limit = {
+				NOR = {
+					trait = fus
+					trait = fus_ro 
+					trait = fus_ro_dah 
+				}
+			}
+			add_trait = fus
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = fus 
+			}
+			remove = fus 
+			add_trait = fus_ro
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = fus_ro
+			}
+			remove_trait = fus_ro
+			add_trait = fus_ro_dah
+			break = yes
+		}
+	}
+	option = {
+		name = evtaoptbfire
+		if = {
+			limit = {
+				NOR = {
+					trait = yol
+					trait = yol_toor
+					trait = yol_toor_shul
+				}
+			}
+			add_trait = yol
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = yol
+			}
+			remove = yol
+			add_trait = yol_toor
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = yol_toor
+			}
+			remove = yol_toor
+			add_trait = yol_toor_shul
+			break = yes
+		}
+	}
+	option = {
+		name = ectaoptcfade
+		if = {
+			limit = {
+				NOR = {
+					trait = feim
+					trait = feim_zii
+					trait = feim_zii_gron
+				}
+			}
+			add_trait = feim 
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = feim
+			}
+			add_trait = feim_zii
+			break = yes
+		}
+		if = {
+			limit = {
+				trait = feim_zii
+			}
+			add_trait = feim_zii_gron
+			break = yes
+		}
+	}
+}
+
+character_event = {
+	id = wordmastery_event.2
+	is_triggered_only = yes
+	ai = no 
+	#hidden
+	trigger = {
+		OR = {
+			AND = {
+				trait = thuum_1
+				NOT = { has_character_flag = learned_thuum_1 }
+			}
+			AND = {
+				trait = thuum_2
+				NOT = { has_character_flag = learned_thuum_2 }
+			}
+			AND = {
+				trait = thuum_3
+				NOT = { has_character_flag = learned_thuum_3 }
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	if = {
+		limit = {
+			trait = thuum_1 
+		}
+		set_character_flag = learned_thuum_1
+		FROM = { character_event = { id = wordmastery_event.0 } }  
+	}
+	if = {
+		limit = {
+			trait = thuum_2
+		}
+		set_character_flag = learned_thuum_2
+		FROM = { character_event = { id = wordmastery_event.0 } }
+	}
+	if = {
+		limit = {
+			trait = thuum_3
+		}
+		set_character_flag = learned_thuum_3
+		FROM = { character_event = { id = wordmastery_event.0 } }
+	}
+}

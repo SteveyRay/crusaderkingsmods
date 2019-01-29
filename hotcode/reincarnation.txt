@@ -1,0 +1,101 @@
+#reincarnation bloodline event
+namespace = oof
+#copytrait
+narrative_event = {
+	id = oof.0
+	is_triggered_only = yes
+	hide_from = yes
+
+	hide_window = yes
+
+	option = {
+
+		FROM = {
+			save_event_target_as = reincarnation_oof
+		}
+
+		ROOT = {
+
+			#Add traits of reincarnation source
+			copy_random_personality_trait = event_target:reincarnation_oof
+			copy_random_personality_trait = event_target:reincarnation_oof
+			copy_random_personality_trait = event_target:reincarnation_oof
+			copy_random_personality_trait = event_target:reincarnation_oof
+			copy_random_personality_trait = event_target:reincarnation_oof
+			copy_random_personality_trait = event_target:reincarnation_oof
+			copy_random_personality_trait = event_target:reincarnation_oof
+			copy_random_personality_trait = event_target:reincarnation_oof
+			copy_random_personality_trait = event_target:reincarnation_oof
+		}
+	}
+}
+#ping
+narrative_event = {
+	id = oof.1
+	is_triggered_only = yes
+	hide_window = yes
+
+	option = {
+		FROM = { narrative_event = { id = oof.0 } }
+	}
+}
+#event to kill yourself I guess
+
+#reincarnation for big dick magus
+narrative_event = {
+	option = {
+		name = 
+		hidden_tooltip = {
+			if = {
+				limit = { ROOT = { is_female = yes } }
+				create_character = {
+					female = yes
+					age = 0
+					random_traits = no
+					dynasty = ROOT
+					religion = ROOT
+					culture = ROOT
+					race = ROOT
+				}
+				new_character = {
+					set_mother = ROOT
+				}
+			}
+			if = {
+				limit = { ROOT = { is_female = no } }
+				create_character = {
+					female = no
+					age = 0
+					random_traits = no
+					dynasty = ROOT
+					religion = ROOT
+					culture = ROOT
+					race = ROOT
+				}
+				new_character = {
+					set_father = ROOT
+				}
+			}
+			new_character = {
+				narrative_event = { id = }
+				narrative_event = { id = }
+			}
+		}
+	}
+}
+#be superimmortal
+narrative_event = {
+	id = oof.9999 #the oof is over 9 thousand
+	hide_window = yes
+	is_triggered_only = yes
+	ai = no
+	trigger = {
+		trait = thuum_3
+	}
+	if = {
+		limit {
+			trait = thuum_3
+		}
+		set_character_flag = super_immortal
+	}
+}
